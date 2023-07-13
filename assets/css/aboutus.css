@@ -1,0 +1,130 @@
+.aboutus h1 {
+    font-size: 36px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    position: relative;
+    opacity: 0.9;
+    transition: opacity 0.3s ease;
+  }
+  
+  .aboutus h1:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #e55643;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+  }
+  
+  .aboutus h1:hover:before {
+    transform: scaleX(1);
+  }
+  
+  .aboutus h1 span {
+    display: inline-block;
+    position: relative;
+  }
+  
+  .aboutus h1 span:before,
+  .aboutus h1 span:after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background-color: #e55643;
+    transition: width 0.3s ease;
+  }
+  
+  .aboutus h1 span:before {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .aboutus h1 span:after {
+    right: 50%;
+    transform: translateX(50%);
+  }
+  
+  .aboutus h1 span:hover:before,
+  .aboutus h1 span:hover:after {
+    width: 50%;
+  }
+  
+  .aboutus h1:hover {
+    opacity: 1;
+  }
+  
+  .aboutus h1:hover span:before,
+  .aboutus h1:hover span:after {
+    width: 100%;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.aboutus {
+    max-width: 800px;
+    margin: 150px auto 20px;
+  }
+  
+  .aboutus h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center; /* Added text-align property */
+  }
+  
+  .aboutus p {
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-align: justify; /* Added text-align property */
+  }
+  
+  .aboutus .contact-info {
+    font-weight: bold;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    /* Styles for mobile devices */
+    .aboutus {
+      max-width: 90%;
+      margin-top: 150px;
+    }
+  
+    .aboutus h1 {
+      font-size: 20px;
+    }
+  
+    .aboutus p {
+      font-size: 16px;
+    }
+  }
+  
+  @media only screen and (min-width: 601px) {
+    /* Styles for desktop devices */
+    .aboutus {
+      max-width: 800px;
+    }
+  }
+  
